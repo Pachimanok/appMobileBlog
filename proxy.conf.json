@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://api-node-168qk2mac-pachimanok.vercel.app",
+        "secure": false,
+        "loglevel":"debug"
+    }
+}

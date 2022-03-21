@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Post Unico
+       </ion-title>
+       <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<style>
+  .content-ltr.hydrated{
+    position: absolute !important;
+  }
+</style>
+<ion-content >
+    <ion-card>
+      <img src="{{dato.url}}">
+      <ion-card-header>
+        <ion-card-title>{{ dato.name }} </ion-card-title>
+        <ion-card-subtitle>
+        <h5>{{ dato.subtitulo}}</h5>
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <div
+          [innerHTML]="dato.body" 
+        >
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" style="margin-bottom: 3rem;">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button> 
+      <ion-fab-list side="top">
+        <ion-fab-button><ion-icon name="cash-outline"></ion-icon></ion-fab-button>
+     
+        <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+      
+        <ion-fab-button><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+<br><br>
+
+</ion-content>
